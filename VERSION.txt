@@ -1,0 +1,3 @@
+Esgrima biblico | Bezrael
+Codigo fuente: 31f937dcbe37b2278bb8f697c155626c6a84b252
+Edicion local para XAMPP, con las funciones de la ultima version publicada.

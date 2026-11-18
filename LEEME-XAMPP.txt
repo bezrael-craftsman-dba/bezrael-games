@@ -1,0 +1,61 @@
+ESGRIMA BIBLICO - BEZRAEL
+PROYECTO COMPLETO PARA XAMPP
+
+INSTALACION EN WINDOWS
+
+1. Descomprime el ZIP. Contiene una carpeta llamada esgrima-biblico.
+2. Copia esa carpeta dentro de htdocs. Ruta predeterminada:
+   C:\xampp\htdocs\esgrima-biblico\
+3. Comprueba que index.html quede exactamente en:
+   C:\xampp\htdocs\esgrima-biblico\index.html
+4. En XAMPP Control Panel, inicia Apache con Start.
+5. Abre en tu navegador:
+   http://localhost/esgrima-biblico/
+
+Si Apache usa otro puerto, por ejemplo 8080:
+   http://localhost:8080/esgrima-biblico/
+
+No requiere importar bases de datos ni iniciar MySQL. No necesita instalar
+paquetes, ejecutar compilaciones ni configurar PHP. Es una web estatica:
+HTML, CSS y JavaScript. El catalogo biblico y las fuentes estan incluidos;
+para jugar no necesita Internet.
+
+ARCHIVOS PARA EDITAR
+
+index.html          Estructura y textos de las pantallas.
+styles.css          Colores, distribucion, version movil y animaciones.
+app.js              Flujo del juego, interfaz y controles.
+engine.js           Reglas del torneo, puntuacion y podio.
+themes.js           Citas agrupadas por tema.
+references.js       Validacion de citas e importacion CSV/TXT.
+bible-catalog.js    Catalogo de 66 libros Reina-Valera 1909.
+avatars.js          Avatares, colores y procesamiento de fotografias.
+decoys.js           Nombres de libros senuelo en cinco idiomas.
+fonts\              Fuentes incluidas y sus licencias.
+citas-ejemplo.csv    Ejemplo editable para importar citas.
+README.md           Documentacion completa de funciones y formatos.
+
+CONFIGURACION Y DATOS
+
+La configuracion y los avatares se guardan solo en el navegador utilizado.
+Los CSV/TXT y las fotos se procesan localmente; no se suben a PHP.
+El avance de una partida no se guarda al recargar. El juego publicado y
+localhost tienen configuraciones independientes. Puedes volver a importar
+las citas y configurar participantes en la copia local.
+
+VERIFICACIONES OPCIONALES PARA DESARROLLO
+
+No son necesarias para jugar. Si tienes Node.js instalado, desde esta carpeta:
+   node tests/references.test.cjs
+   node tests/engine.test.cjs
+
+scripts/build-bible-catalog.py es opcional para regenerar el catalogo desde
+su fuente publica; requiere Python e Internet solo al usarla. No necesitas
+ejecutarla: bible-catalog.js ya esta generado e incluido.
+
+SI NO ABRE
+
+- Asegurate de que Apache este iniciado.
+- Revisa el puerto de Apache y ajusta la URL si no es el 80.
+- Evita carpetas duplicadas: esgrima-biblico\esgrima-biblico\index.html.
+- Despues de editar archivos, actualiza con Ctrl+F5 si ves la version anterior.
