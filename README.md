@@ -1,4 +1,4 @@
-# Esgrima bíblico · Bezrael
+# Esgrima bíblico · Bezrael Games
 
 Juego web de Bezrael con modos **Clásico** y **Torneo**. HTML, CSS y JavaScript sin dependencias externas.
 
